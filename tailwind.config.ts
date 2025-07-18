@@ -32,6 +32,15 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
+				// Brand colors from logo
+				'brand-green': {
+					DEFAULT: 'hsl(var(--brand-green))',
+					light: 'hsl(var(--brand-green-light))'
+				},
+				'brand-burgundy': {
+					DEFAULT: 'hsl(var(--brand-burgundy))',
+					light: 'hsl(var(--brand-burgundy-light))'
+				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'

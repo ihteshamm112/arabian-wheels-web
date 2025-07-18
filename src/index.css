@@ -17,11 +17,22 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand colors from logo - Green and Burgundy */
+    --primary: 142 40% 35%; /* Deep green from logo */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 340 45% 40%; /* Burgundy/maroon from logo */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Additional brand colors */
+    --brand-green: 142 40% 35%;
+    --brand-green-light: 142 35% 45%;
+    --brand-burgundy: 340 45% 40%;
+    --brand-burgundy-light: 340 40% 50%;
+    
+    /* Gradients for hero sections */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-green)), hsl(var(--brand-burgundy)));
+    --gradient-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
