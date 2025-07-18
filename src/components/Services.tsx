@@ -67,12 +67,12 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <Card key={index} className="group hover-lift transition-all duration-300 animate-fade-in border-0 shadow-lg" style={{ animationDelay: `${index * 0.1}s` }}>
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit group-hover:bg-primary group-hover:text-white transition-colors">
-                  <service.icon className="h-8 w-8 text-primary group-hover:text-white" />
+                <div className="mx-auto mb-4 p-4 bg-gradient-to-br from-brand-green/10 to-brand-burgundy/10 rounded-full w-fit group-hover:bg-gradient-to-br group-hover:from-brand-green group-hover:to-brand-burgundy group-hover:text-white transition-all duration-300 group-hover:scale-110">
+                  <service.icon className="h-8 w-8 text-primary group-hover:text-white transition-colors" />
                 </div>
-                <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">{service.title}</CardTitle>
                 <CardDescription className="text-sm">
                   {service.description}
                 </CardDescription>
@@ -80,8 +80,8 @@ const Services = () => {
               <CardContent>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-1 h-1 bg-primary rounded-full mr-2"></div>
+                    <li key={idx} className="flex items-center text-sm text-muted-foreground group-hover:text-foreground transition-colors">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:bg-brand-burgundy transition-colors"></div>
                       {feature}
                     </li>
                   ))}

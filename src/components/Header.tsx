@@ -23,30 +23,36 @@ const Header = () => {
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              Home
+              Home / الرئيسية
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              Services
+              Services / الخدمات
+            </button>
+            <button 
+              onClick={() => scrollToSection('fleet')}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Our Fleet / الأسطول
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              About
+              About / عن الشركة
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              Contact
+              Contact / اتصل بنا
             </button>
           </nav>
 
